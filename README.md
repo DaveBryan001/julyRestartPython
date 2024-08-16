@@ -1,8 +1,20 @@
-# Hello Script
+# Modules and Functions in Python
 
 This script demonstrates different ways to import and use functions from a module in Python.
 
 ## Concepts Covered
+
+### Functions
+
+This script demonstrates basic Python functions for greeting users. The functions are defined in the [`test.py`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py)  module.
+### `greet(name)`
+This function takes a single argument `name` and prints a greeting message "hello" followed by the name.
+
+**Example:**
+```python
+greet("Ben")
+# Output: hello Ben
+```
 
 ### Importing Functions
 
@@ -10,25 +22,25 @@ This script demonstrates different ways to import and use functions from a modul
     ```python
     from test import greet
     ```
-    This line is commented out, but it shows the standard way to import a specific function ([`greet`](command:_github.copilot.openSymbolFromReferences?%5B%22greet%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A17%7D%7D%5D%5D "Go to definition")) from the [`test`](command:_github.copilot.openSymbolFromReferences?%5B%22test%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A5%7D%7D%5D%5D "Go to definition") module.
+    This line is commented out, but it shows the standard way to import a specific function ([`greet`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition")) from the [`test`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") module.
 
 2. **Import with Alias**:
     ```python
     from test import greet as sayhello
     ```
-    This imports the [`greet`](command:_github.copilot.openSymbolFromReferences?%5B%22greet%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A17%7D%7D%5D%5D "Go to definition") function from the [`test`](command:_github.copilot.openSymbolFromReferences?%5B%22test%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A5%7D%7D%5D%5D "Go to definition") module and renames it to [`sayhello`](command:_github.copilot.openSymbolFromReferences?%5B%22sayhello%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A26%7D%7D%5D%5D "Go to definition") within the current script.
+    This imports the [`greet`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") function from the [`test`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") module and renames it to [`sayhello`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") within the current script.
 
 3. **Import Entire Module**:
     ```python
     import test
     ```
-    This imports the entire [`test`](command:_github.copilot.openSymbolFromReferences?%5B%22test%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A5%7D%7D%5D%5D "Go to definition") module, allowing access to all its functions using the [`test.`](command:_github.copilot.openSymbolFromReferences?%5B%22test.%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A5%7D%7D%5D%5D "Go to definition") prefix.
+    This imports the entire [`test`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") module, allowing access to all its functions using the [`test.`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") prefix.
 
 4. **Import Another Function**:
     ```python
     from test import sayhi
     ```
-    This imports the [`sayhi`](command:_github.copilot.openSymbolFromReferences?%5B%22sayhi%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A3%2C%22character%22%3A17%7D%7D%5D%5D "Go to definition") function from the [`test`](command:_github.copilot.openSymbolFromReferences?%5B%22test%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A5%7D%7D%5D%5D "Go to definition") module.
+    This imports the [`sayhi`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") function from the [`test`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") module.
 
 ### Using Imported Functions
 
@@ -36,13 +48,24 @@ This script demonstrates different ways to import and use functions from a modul
     ```python
     test.sayhi("Dave")
     ```
-    This calls the [`sayhi`](command:_github.copilot.openSymbolFromReferences?%5B%22sayhi%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A3%2C%22character%22%3A17%7D%7D%5D%5D "Go to definition") function from the [`test`](command:_github.copilot.openSymbolFromReferences?%5B%22test%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A1%2C%22character%22%3A5%7D%7D%5D%5D "Go to definition") module, passing `"Dave"` as an argument.
+    This calls the [`sayhi`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") function from the [`test`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") module, passing `"Dave"` as an argument.
 
 2. **Calling a Directly Imported Function**:
     ```python
     sayhi("Dave")
     ```
-    This calls the [`sayhi`](command:_github.copilot.openSymbolFromReferences?%5B%22sayhi%22%2C%5B%7B%22uri%22%3A%7B%22%24mid%22%3A1%2C%22fsPath%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22external%22%3A%22file%3A%2F%2F%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22path%22%3A%22%2Fhome%2Fdavebryan%2Ftutorial%2Fhello.py%22%2C%22scheme%22%3A%22file%22%7D%2C%22pos%22%3A%7B%22line%22%3A3%2C%22character%22%3A17%7D%7D%5D%5D "Go to definition") function directly, as it was imported without the module prefix.
+    This calls the [`sayhi`](https://github.com/DaveBryan001/julyRestartPython/blob/main/test.py "Go to definition") function directly, as it was imported without the module prefix.
+
+### Importing Built-in Modules in Python
+
+This [script](https://github.com/DaveBryan001/julyRestartPython/blob/main/math2.py) demonstrates basic mathematical operations using Python's `math` module. It includes examples of using the `fabs` and `floor` functions to perform absolute value and floor operations, respectively.
+
+The script imports the `math` module and also imports the `fabs` function from the `math` module with an alias `f`.
+
+```python
+import math
+from math import fabs as f
+```
 
 ## Conclusion
 
