@@ -19,7 +19,12 @@ if name != "":
 else:
     name = input("What is your name? ")  # Prompt the user for their name
     print("Hello " + name)
-    json.dump(name, open(file, "w"))  # Save the name to the file
+try:
+        open(name, 'w')
+        # json.dump(name, f)
+        json.dump(name, open(file, "w"))  # Save the name to the file
+except IOError:
+    print("There was a problem writing to the history file.")
 
 
 
